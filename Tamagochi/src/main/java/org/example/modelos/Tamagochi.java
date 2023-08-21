@@ -47,6 +47,38 @@ public class Tamagochi {
 
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    private void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Estado getEstado() {
+        return estado;
+    }
+
+    private void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    private void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public int getTiempoMinAburrido() {
+        return tiempoMinAburrido;
+    }
+
+    private void setTiempoMinAburrido(int tiempoMinAburrido) {
+        this.tiempoMinAburrido = tiempoMinAburrido;
+    }
+
     public void sumar40MinAburrido(){
         if(this.estado==Estado.ABURRIDO)
             tiempoMinAburrido+=40;
